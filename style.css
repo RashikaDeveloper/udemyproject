@@ -52,6 +52,7 @@ body {
     border-bottom: 1px solid black;
     justify-content: space-around;
     cursor: pointer;
+    
 }
 .topics p {
     background-color: darkmagenta;
@@ -60,11 +61,13 @@ body {
     border-radius: 30px;
     margin: 2px;
     border: 1px solid transparent;
+    transition-duration: 2s;
 }
 .topics p:hover {
     color: darkcyan;
     background-color: cornsilk;
     border: 1px solid black;
+    
 }
 .mylearning{
     position: relative;
@@ -93,6 +96,18 @@ body {
     position: absolute;
     top: 20%;
     left: 10%;
+    animation: offer 2s linear alternate forwards;
+}
+/* animation */
+@keyframes offer{
+    0%{
+        scale: 0;
+        opacity: 0;
+    }
+    100%{
+        scale: 1;
+        opacity: 1;
+    }
 }
 .recommended {
     padding: 10px;
